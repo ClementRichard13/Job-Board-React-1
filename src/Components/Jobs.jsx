@@ -7,6 +7,7 @@ const Jobs = () => {
       {data.map((elem) => {
         return (
           <Job
+            key={elem.id}
             title={elem.title}
             contractType={elem.contractType}
             country={elem.country}
@@ -15,69 +16,6 @@ const Jobs = () => {
           />
         );
       })}
-      {/* <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"red"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"blue"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"yellow"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"pink"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"green"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"red"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"blue"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"yellow"}
-      />
-      <Job
-        title={"Agent de sécurité Marseille"}
-        contractType={"CDI"}
-        country={"France"}
-        city={"Marseille"}
-        className={"pink"}
-      /> */}
     </main>
   );
 };
