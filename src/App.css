@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333333;
+  height: 150px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 1024px;
+  margin: 60px auto;
+  border: solid black 2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job {
+  height: 328px;
+  width: calc(100% / 3 - 40px / 3);
+  border: solid red 2px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.job:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+
+h2 {
+  font-size: 30px;
+}
