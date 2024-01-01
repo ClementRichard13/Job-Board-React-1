@@ -26,7 +26,7 @@ function App() {
       {tabObj.map((elem, index) => {
         return (
           <p key={index}>
-            key Bonjour je suis {elem.name} et j'ai {elem.age} ans
+            Bonjour je suis {elem.name} et j'ai {elem.age} ans
           </p>
         );
       })}
